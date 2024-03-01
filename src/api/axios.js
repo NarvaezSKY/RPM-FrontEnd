@@ -13,7 +13,6 @@ Instance.interceptors.request.use(
   (config) => {
     const token = sessionStorage.getItem("token");
     if (token) {
-    //   console.log(token);
       config.headers.authorization = `${token}`;
     }
     return config;

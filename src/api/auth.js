@@ -1,4 +1,4 @@
-import axios from './axios'
+import axios from "./axios";
 
-export const Login=(user)=>axios.post(`/adminlogin`, user)
-export const VerifyToken=()=>axios.get(`/adminverify`)
+export const Login = (user) => axios.post(`/adminlogin`, user);
+export const VerifyToken = () => axios.get(`/adminverify`);
